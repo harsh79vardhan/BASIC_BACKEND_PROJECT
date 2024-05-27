@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ALL PRODUCTS</h1>
+    <ul>
+        <%for(let p of prod){%>
+            <li>
+                <%=p.name%>
+                <a href="/products/<%= p._id %>"><%= p.name %></a>
+            </li>
+        <%}%>
+    </ul>
+    <a href="/products/add">ADD NEW PRODUCT</a>
+</body>
+</html>
